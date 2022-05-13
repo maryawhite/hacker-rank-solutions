@@ -9,15 +9,30 @@ public class StringTokens {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         //write your code here //
+//
+//        s = s.trim();
+//        if(s.length() == 0) {
+//            System.out.println(0);
+//        }
+//        String[] splitstr = s.split("['!?,._@ ]+");
+//
+//        System.out.println(splitstr.length);
+//        for(int i = 0; i < splitstr.length; i++) {
+//            System.out.println(splitstr[i]);
+//        }
 
-        String[] splitstr = s.split(" |'");
+        // CORRECT CODE BELOW Note that not using the else statement above changes how the code works//
+                s = s.trim();
+                if(s.length() == 0) {
+                    System.out.println("0");
+                } else {
+                    String[] splitstr = s.split("['!?,._@ ]+");
+                    System.out.println(splitstr.length);
+                    for(int i = 0; i < splitstr.length; i++) {
+                        System.out.println(splitstr[i]);
+                    }
+                }
 
-        System.out.println(splitstr.length);
-        for(int i = 0; i < splitstr.length; i++) {
-            System.out.println(splitstr[i].replaceAll("[^a-zA-Z ]", ""));
-        }
-
-        // // ERROR:This solution only passed 3/11 test cases
         scanner.close();
     }
 }
@@ -39,3 +54,4 @@ public class StringTokens {
 // t
 // he
 //Note: all punctuation is removed and the word is split at each space or apostrophe
+//Hello, thanks for attempting this problem! Hope it will help you to learn java! Good luck and have a nice day!
