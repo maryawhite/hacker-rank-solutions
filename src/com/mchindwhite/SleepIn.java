@@ -14,9 +14,6 @@ public class SleepIn {
         System.out.println(SleepIn.sleepIn(false, true)); //true
         System.out.println(SleepIn.sleepIn(true, true)); //true
         System.out.println(SleepIn.sleepIn(true, false)); //false
-
-
-
     }
 }
 
